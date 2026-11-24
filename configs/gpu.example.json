@@ -1,0 +1,11 @@
+{
+  "status": "deployment contract; inference adapters not implemented",
+  "device": "cuda:0",
+  "offline": true,
+  "inputs": ["data/ami/clips/IS1009a_01.mp4", "data/ami/clips/IS1009a_02.mp4"],
+  "face": {"backend": "insightface", "model_dir": "models/buffalo_l"},
+  "voice": {"backend": "speakerlab_eres2netv2", "checkpoint": "models/pretrained_eres2netv2.ckpt"},
+  "speech_segmentation": {"backend": null, "note": "Select and implement offline VAD/diarization or import annotated segments"},
+  "audiovisual_linking": {"backend": null, "note": "Select and implement local multimodal model or active-speaker detector; no cloud dependency assumed"},
+  "automatic_confirmation": false
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.env
+.env.*
+!.env.example
+models/
+runs/
+data/**
+!data/ami/
+!data/ami/manifest.json

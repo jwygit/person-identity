@@ -1,0 +1,61 @@
+{
+  "dataset": "AMI",
+  "meeting": "IS1009a",
+  "license": "CC BY 4.0",
+  "attribution": "AMI Meeting Corpus, AMI Consortium",
+  "source": "https://groups.inf.ed.ac.uk/ami/AMICorpusMirror/amicorpus/IS1009a/",
+  "documentation": "https://groups.inf.ed.ac.uk/ami/corpus/signals.shtml",
+  "note": "Low-resolution central camera; muxed with mixed headset audio. No manual AV-sync or identity ground-truth validation performed.",
+  "raw": [
+    {
+      "file": "raw/IS1009a.C.avi",
+      "sha256": "986b59d25e17b5cec6242a98d30f4e9f7c52773174564466aa00e74604c3d212"
+    },
+    {
+      "file": "raw/IS1009a.Mix-Headset.wav",
+      "sha256": "6eb5a0ede0d9e72794f976ce7bea5b78133eae969f99b4c5418b43c2468d25b1"
+    }
+  ],
+  "clips": [
+    {
+      "file": "clips/IS1009a_01.mp4",
+      "source_start": 60,
+      "duration": 60.0,
+      "sha256": "b005be44b1391aab6719dd2719d0ab2767936c10583288676244a0aec0731d6d",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 352,
+          "height": 288
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "sample_rate": "16000",
+          "channels": 1
+        }
+      ]
+    },
+    {
+      "file": "clips/IS1009a_02.mp4",
+      "source_start": 180,
+      "duration": 60.0,
+      "sha256": "ab80d0ae2121fb5e03ae8b0cd063d51efc1d7cbbd09559c09e4782f3572c1bf2",
+      "streams": [
+        {
+          "codec_type": "video",
+          "codec_name": "h264",
+          "width": 352,
+          "height": 288
+        },
+        {
+          "codec_type": "audio",
+          "codec_name": "aac",
+          "sample_rate": "16000",
+          "channels": 1
+        }
+      ]
+    }
+  ]
+}

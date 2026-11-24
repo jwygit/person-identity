@@ -1,0 +1,17 @@
+{
+  "description": "Synthetic vectors and manually reviewed associations; not a recognition benchmark.",
+  "observations": [
+    {"id": "clip-a:face-1", "modality": "face", "source": "clip-a.mp4", "start": 0, "end": 3, "model": "synthetic-face-v1", "embedding": [1, 0]},
+    {"id": "clip-a:voice-1", "modality": "voice", "source": "clip-a.mp4", "start": 1, "end": 3, "model": "synthetic-voice-v1", "embedding": [0, 1], "text": "测试台词"},
+    {"id": "clip-b:face-2", "modality": "face", "source": "clip-b.mp4", "start": 4, "end": 6, "model": "synthetic-face-v1", "embedding": [0.99, 0.01]},
+    {"id": "clip-b:voice-unknown", "modality": "voice", "source": "clip-b.mp4", "start": 7, "end": 9, "model": "synthetic-voice-v1", "embedding": [1, 0]}
+  ],
+  "links": [
+    {"id": "av-1", "left": "clip-a:face-1", "right": "clip-a:voice-1", "method": "manual", "evidence": {"note": "Synthetic audiovisual correspondence"}},
+    {"id": "face-repeat", "left": "clip-a:face-1", "right": "clip-b:face-2", "method": "embedding", "evidence": {"note": "Synthetic repeat appearance"}}
+  ],
+  "reviews": [
+    {"link_id": "av-1", "status": "confirmed", "reviewer": "fixture", "reason": "synthetic ground truth"},
+    {"link_id": "face-repeat", "status": "confirmed", "reviewer": "fixture", "reason": "synthetic ground truth"}
+  ]
+}
