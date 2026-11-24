@@ -11,3 +11,6 @@ runs/
 data/**
 !data/ami/
 !data/ami/manifest.json
+!data/ami/clips/
+!data/ami/clips/IS1009a_01.mp4
+!data/ami/clips/IS1009a_02.mp4
